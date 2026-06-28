@@ -1,0 +1,80 @@
+/* Seletor (Body), seleciona uma tag do html para ser modificada */
+/* E os itens dentro dos seletores são so atributos */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    justify-content: center;  /* Deixar no centro */
+    padding-top: 40px;  /* Distãncia entre os itens (O tamanho da box fica definido e mais espaçado) */
+}
+
+
+
+
+
+/* PARALLAX */
+.parallax {
+    height: 100vh;
+
+    background-image: url("fundo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 0 0 20px black;
+}
+
+
+
+
+
+.cards {
+    display: flex;
+    gap: 20px; /* Distancia entre os cards */
+    flex-wrap: wrap; /* Quando o tamanho da tela for modificado a posição dos itens também será */
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+.card {
+    width: 500px; /* Compriemnto */
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px; /* Borda rendonda */
+    overflow: hidden; /*  */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra do card */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+.container h4 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.container p {
+    margin: 0;
+    color: #555;
+}
