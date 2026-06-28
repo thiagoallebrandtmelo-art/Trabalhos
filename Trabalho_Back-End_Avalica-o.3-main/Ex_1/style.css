@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imagem img {
+    border: 2px solid black;
+    border-radius: 50px;
+}
