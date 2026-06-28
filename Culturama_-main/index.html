@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Culturama</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+
+    <section>
+        <form action="" method="get">
+             <fieldset>    
+                <legend>Dados Pessoais</legend>
+
+                <label for="userName">Nome</label>
+                <input id="userName" type="text" name="userName" required><br>
+
+                <label for="age">Idade</label>
+                <input id="age" type="number" name="age" min="12" max="100" required><br>
+
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate"><br>
+
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" required><br>
+
+                <label for="userNumberPhone">Telefone</label>
+                <input type="tel" name="userNumberPhone" pattern="[0-9]{11}" placeholder="(00) 00000000"><br>
+
+                <label for="userimage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userimage"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+                 
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" value="feminino">
+                <label for="userGender">Feminino</label><br>
+                <input type="radio" name="userGender" value="masculino">
+                <label for="userGender">Masculino</label><br>
+                <input type="radio" name="userGender" value="not_informed">
+                <label for="userGender">Prefiro Não Informar</label><br>
+               
+                <label for="marialstatus">Estado Cívil:</label>
+                <select name="marialstatus">
+                    <option value="notinformed">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="soteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="casado">União Estável</option>
+                </select><br>
+
+                <label for="cidade">Cidade:</label>
+                <select name="cidade" id="">
+                <option value="acre">AC, Acre</option>    
+                <option value="alagoas">AL, Alagoas</option>    
+                <option value="amapa">AP, Amapá</option>    
+                <option value="amazonas">AM, Amazonas</option>    
+                <option value="bahia">BA, Bahia</option>    
+                <option value="ceara">CE, Ceará</option>    
+                <option value="distritoFederal">DF, Distrito Federal</option>    
+                <option value="espiritoSanto">ES, Espirito Santo</option>    
+                <option value="goias">GO, Goiás</option>    
+                <option value="maranhao">MA, Maranhão</option>    
+                <option value="matoGrossodoSul">MS, Mato Grosso do Sul</option>    
+                <option value="matoGrosso">MT, Mato Grosso</option>    
+                <option value="minasGerais">MG, Minas Gerais</option>    
+                <option value="para">PA, Pará</option>    
+                <option value="paraiba">PB, Paraíba</option>    
+                <option value="parana">PR, Paraná</option>    
+                <option value="pernambuco">PE, Pernambuco</option>    
+                <option value="piaui">PI, Piauí</option>    
+                <option value="riodeJaneiro">RJ, Rio de Janeiro</option>    
+                <option value="rioGrandedoNorte">RN, Rio Grande do Norte</option>    
+                <option value="rioGrandedoSul">RS, Rio Grande do Sul</option>    
+                <option value="rondonia">RO, Rondônia</option>    
+                <option value="roraima">RR, Roraima</option>    
+                <option value="santaCatarina">SC, Santa Catarina</option>    
+                <option value="saoPaulo">SP, São Paulo</option>    
+                <option value="sergipe">SE, Sergipe</option>    
+                <option value="tocantins">TO, Tocantins</option>    
+                </select><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos:</legend>
+                <p>Redes Sociais:</p>
+                <input type="checkbox" name="social" value="instagram">
+                <label for="social">Instagram</label>
+                <br>
+                <input type="checkbox" name="social" value="facebook">
+                <label for="social">Facebook</label>
+                <br>
+                <input type="checkbox" name="social" value="linkedin">
+                <label for="social">Linkedin</label>
+                <br>
+                <input type="checkbox" name="social" value="Twitter">
+                <label for="social">Twitter</label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
